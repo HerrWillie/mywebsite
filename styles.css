@@ -11,31 +11,6 @@ body {
   margin: 0 auto;
 }
 
-header#about {
-  text-align: center;
-  margin: 30px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-}
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  max-width: 80ch;
-  margin: 0 auto;
-  background-color: #f5f5f5;
-}
-
 /* Navbar */
 nav {
   background-color: #006f3d;
@@ -48,6 +23,27 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+/* Base styles */
+.menu-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade-in effect */
+.menu-bar.fade-in {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+/* Hide the menu bar until it's faded in */
+.menu-bar.hidden {
+  visibility: hidden;
 }
 
 .nav-list {
@@ -85,6 +81,7 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   text-align: center;
   font-size: 10px;
   margin: 1rem;

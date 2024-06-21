@@ -1,24 +1,17 @@
-// Get the CTA button element and add an event listener to it
-const ctaButton = document.querySelector('#cta');
-if (ctaButton) {
-    ctaButton.addEventListener('click', handleCtaClick);
-}
+// Add a click event listener to the navigation menu button
+document.querySelector('.nav-button').addEventListener('click', () => {
+  // Toggle the visibility of the navigation menu
+  document.querySelector('.nav-menu').classList.toggle('show');
+});
 
-function handleCtaClick() {
-    // Navigate to the About Section using a smoother scrolling experience
-    const aboutSection = document.querySelector('#about');
-    if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
-}
+// Add a click event listener to the "About Us" button in the navigation menu
+document.querySelector('.about-button').addEventListener('click', () => {
+  // Open a new tab with the URL of the About page
+  window.open('/about.html', '_blank');
+});
 
-// Get the cookie popup element
-const cookiePopup = document.getElementById("cookie-popup");
-
-// Add a click event listener to the close button element
-document.getElementById("close-button").addEventListener("click", function() {
-  // Remove the cookie popup from the DOM after 5 seconds
-  setTimeout(function() {
-    cookiePopup.remove();
-  }, 5000);
+// Add a click event listener to the "Contact Us" button in the navigation menu
+document.querySelector('.contact-button').addEventListener('click', () => {
+  // Open a new tab with the URL of the Contact page
+  window.open('/contact.html', '_blank');
 });

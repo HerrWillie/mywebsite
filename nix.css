@@ -1,0 +1,160 @@
+/* CSS Document */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  line-height: 3rem;
+  background-color: #333;
+  color: #fff;
+}
+
+nav a {
+  display: inline-block;
+  padding: 2rem;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  margin-right: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin-left: 3rem;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #555;
+}
+
+button#home-btn {
+  position: absolute;
+  top: 0.6rem;
+  right: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+button#home-btn i {
+  margin-right: 0.5rem;
+}
+
+/* About Section */
+section#about {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+section#about h2 {
+  font-size: 1.8rem;
+}
+
+section#about p {
+  margin-top: 1rem;
+}
+
+/* Skills Section */
+section#skills {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+section#skills h2 {
+  font-size: 1.8rem;
+}
+
+section#skills .skills-list {
+  list-style: none;
+  margin-left: -3rem;
+}
+
+section#skills .skills-list li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+/* Portfolio Section */
+section#portfolio {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+section#portfolio h2 {
+  font-size: 1.8rem;
+}
+
+section#portfolio p {
+  margin-top: 1rem;
+}
+
+/* Contact Section */
+section#contact {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+section#contact h2 {
+  font-size: 1.8rem;
+}
+
+section#contact form {
+  margin-top: 2rem;
+}
+
+section#contact form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+section#contact form input,
+section#contact form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+section#contact form button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+section#contact form button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
